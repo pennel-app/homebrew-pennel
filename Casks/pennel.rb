@@ -2,10 +2,10 @@
 # frozen_string_literal: true
 
 cask "pennel" do
-  version "0.1.4"
-  sha256 "cac5811a0e08e053553348b9a78a5cdff85480fcd6e9ad0f59a254a0f698f6c4"
+  version "0.1.7"
+  sha256 "b0429d5314d76dc56fd753e07f5145912876fe737de0a7469425fec874377f84"
 
-  url "https://github.com/ikbenignace/pennel/releases/download/v#{version}/Pennel_#{version}_aarch64.dmg"
+  url "https://github.com/pennel-app/pennel/releases/download/v#{version}/Pennel_#{version}_aarch64.dmg"
   name "Pennel"
   desc "Dictation and meeting notes"
   homepage "https://pennel.app/"
