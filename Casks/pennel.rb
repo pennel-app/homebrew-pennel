@@ -2,8 +2,8 @@
 # frozen_string_literal: true
 
 cask "pennel" do
-  version "0.1.42"
-  sha256 "c95d274efaad3dc3a793fe885e22a599c5a89a249121d683edb5ce343c41ec9f"
+  version "0.1.43"
+  sha256 "4ea037428207af1da5808e8b44b5bc0ef470bc3c7cd2c33f9870d28829150514"
 
   url "https://github.com/pennel-app/pennel/releases/download/v#{version}/Pennel_#{version}_aarch64.dmg"
   name "Pennel"
