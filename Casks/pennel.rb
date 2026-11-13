@@ -2,8 +2,8 @@
 # frozen_string_literal: true
 
 cask "pennel" do
-  version "0.1.48"
-  sha256 "8e86f446bf9efd792718afaec4eb239152d62b62503b4a828ec0fd6ea30d169c"
+  version "0.1.49"
+  sha256 "fe53d1f1f3ff66bbf1f6d7b6d206b952e936c6a6c6d7227e37ac6b571c4bed6b"
 
   url "https://github.com/pennel-app/pennel/releases/download/v#{version}/Pennel_#{version}_aarch64.dmg"
   name "Pennel"
@@ -19,11 +19,6 @@ cask "pennel" do
   depends_on macos: :sonoma
 
   app "Pennel.app"
-
-  # Builds are not notarized yet; without this Gatekeeper refuses to open the app.
-  postflight_steps do
-    run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{appdir}}/Pennel.app"]
-  end
 
   # Meetings, history and models stay; zap only removes regenerable data.
   zap trash: [
