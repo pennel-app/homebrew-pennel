@@ -8,6 +8,10 @@ Shared conventions live in the private [Pennel Home repository](https://github.c
 
 This local guide, the tap README and the public roadmap remain usable without private Home access. Resolve glossary and ADR paths below in this tap checkout.
 
+### Team knowledge (mandatory)
+
+Before authorized Pennel execution work, read `<Home>/docs/agents/knowledge.md`, `<Home>/docs/knowledge/README.md` and relevant topics. Before completion, follow that workflow to capture useful, verified reusable findings and automatically commit and push factual notes only. Instruction, skill or policy changes follow PR review. Read-only tasks and Plan mode defer writes; unrelated use of shared helpers does not trigger Pennel capture. If Home access or publishing is unavailable, retain notes locally and report capture or publication pending; keep private findings out of public records.
+
 ### Issue tracker
 
 GitHub Issues in `pennel-app/homebrew-pennel`, following Pennel's roadmap workflow.
