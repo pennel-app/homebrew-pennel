@@ -6,6 +6,10 @@ Follow the public [Pennel roadmap agent workflow](https://github.com/pennel-app/
 
 Shared conventions live in the private [Pennel Home repository](https://github.com/pennel-app/pennel-home). Resolve `<Home>` from an explicit `PENNEL_HOME` path first; otherwise walk the selected checkout's real ancestors for the enclosing Home, then try the canonical sibling `pennel-home` checkout. Verify its `AGENTS.md` and repository identity before reading shared guides. Clone Home from its remote if it is missing and team access is available.
 
+### Home startup (mandatory)
+
+At each new Pennel task, before reading shared guidance, skills or knowledge, follow `<Home>/docs/agents/startup.md` using `<Home>/scripts/sync-home.py`. Use the returned `guidance_root` for shared guides, knowledge, skills and helper execution; use `canonical_home` for checkout placement. Explicit filesystem restrictions and Plan-mode rules defer prohibited writes. If private Home is unavailable, continue under this repository's public requirements and report synchronization pending. If the startup files are absent and writes are allowed, verify Home's canonical origin, fetch `origin/main` without force, then read the startup guide with `git show origin/main:docs/agents/startup.md` from Home and follow its automatic bootstrap.
+
 This local guide, the tap README and the public roadmap remain usable without private Home access. Resolve glossary and ADR paths below in this tap checkout.
 
 ### Team knowledge (mandatory)
